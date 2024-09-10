@@ -1,0 +1,38 @@
+# Logs
+logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node
+node_modules/
+bower_components
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+.eslintcache
+/.pnp
+
+# Editor
+.vscode/*
+*.code-workspace
+.history/
+.idea/
+.vs/
+
+# OS
+Desktop.ini
+ehthumbs.db
+Thumbs.db
+*.swp
+.DS_Store
+
+# Other
+coverage/
+dist/
+build/
+out/
+.cache/
+pgdata/
+.env
+.grunt

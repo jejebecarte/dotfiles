@@ -1,0 +1,26 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = jejebecarte
+	email = 69335633+jejebecarte@users.noreply.github.com
+	signingKey = 7C6976A545B52C37
+[credential]
+	helper = wincred
+[commit]
+	gpgsign = true
+	template = ~/.gitmessage
+[http]
+	sslVerify = true
+[gpg]
+	program = c:/Program Files (x86)/GnuPG/bin/gpg.exe
+[core]
+	autocrlf = false
+	symlinks = true
+	eol = lf
+	excludesfile = ~/.gitignore
+    attributesfile = ~/.gitattributes
+[push]
+	autoSetupRemote = true
