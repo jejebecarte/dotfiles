@@ -23,6 +23,7 @@
 # SOFTWARE.
 
 # TODO: Implement features (or whole script) from https://github.com/Disassembler0/Win10-Initial-Setup-Script/blob/master/Win10.psm1
+# TODO: Remove overlaps with winutil and O&OShutup10
 
 Param([switch]$Sysprep)
 $ErrorActionPreference = SilentlyContinue

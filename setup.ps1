@@ -4,11 +4,12 @@ Install-Module -Name PSReadLine -Force -SkipPublisherCheck -AllowClobber
 Install-Module -Name Terminal-Icons
 Update-Module
 
-# Install scoop and other apps
+# Install scoop and other not handled by winutil apps
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 scoop update *
 scoop bucket add extras
-scoop install 7zip audacity bitwarden brave discord gpg4win git gnupg libreoffice nvm oh-my-posh spotify vscode windows-terminal
+scoop bucket add nonportable
+scoop install gpg4win gnupg protonvpn-np
 
 # Basic configuration of new apps
 nvm install lts
