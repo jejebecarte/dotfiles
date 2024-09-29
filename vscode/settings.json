@@ -3,7 +3,6 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "window.commandCenter": false,
-    "markdown-preview-enhanced.previewTheme": "none.css",
     "terminal.integrated.fontFamily": "CaskaydiaMono Nerd Font",
     "files.autoSave": "onFocusChange",
     "terminal.integrated.profiles.windows": {
@@ -25,16 +24,6 @@
     },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "svelte.enable-ts-plugin": true,
-    "prettier.documentSelectors": [
-        "\"**/*.astro\""
-    ],
-    "[astro]": {
-        "editor.defaultFormatter": "astro-build.astro-vscode"
-    },
-    "[svelte]": {
-        "editor.defaultFormatter": "svelte.svelte-vscode"
     },
     "[css]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
