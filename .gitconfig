@@ -15,7 +15,10 @@
 [http]
 	sslVerify = true
 [gpg]
-	program = c:/Program Files (x86)/GnuPG/bin/gpg.exe
+	program = /mnt/c/Program Files (x86)/GnuPG/bin/gpg.exe
+# gpgprogram = /mnt/c/Program Files (x86)/GnuPG/bin/gpg.exe
+[includeIf "gitdir:C:/"]
+	path = .gitconfig-windows
 [core]
 	autocrlf = false
 	eol = lf

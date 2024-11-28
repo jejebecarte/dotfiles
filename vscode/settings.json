@@ -60,5 +60,6 @@
     },
     "files.eol": "\n",
     "telemetry.telemetryLevel": "off",
-    "diffEditor.ignoreTrimWhitespace": false
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.enableCommitSigning": true
 }
