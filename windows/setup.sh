@@ -15,7 +15,9 @@ done
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 nvm install lts
 nvm use lts
-npm install -g pnpm
+
+# Install pnpm
+curl -fsSL https://get.pnpm.io/install.sh | sh -
 
 # Run Windows setup
 powershell.exe -File ./windows/setup-windows.ps1

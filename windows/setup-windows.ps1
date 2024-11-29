@@ -3,8 +3,6 @@ if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
     exit;
 }
 
-Set-ExecutionPolicy RemoteSigned
-
 # Install and configure apps for Powershell prompt customisation
 Install-Module -Name PSReadLine -Force -SkipPublisherCheck -AllowClobber
 Install-Module -Name Terminal-Icons

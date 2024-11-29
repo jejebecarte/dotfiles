@@ -2,16 +2,25 @@
 
 Aside from storing configuration files for a variety of applications, this repository provides scripts for debloating and setting up fresh Windows 10 installations (including WSL).
 
+See also: [Remove HP Bloatware](https://gist.github.com/mark05e/a79221b4245962a477a49eb281d97388).
+
 1.  From an Administrator Powershell terminal, install and enter WSL:
 
 ```powershell
 $ wsl --install
+$ Set-ExecutionPolicy Unrestricted
 ```
 
-2.  Then, in bash, run the setup script:
+2.  In bash, run the setup script:
+
+```bash
+$ curl -o- https://raw.githubusercontent.com/jejebecarte/dotfiles/refs/heads/master/windows/setup.sh | bash
+```
+
+3.  Back in Powershell, correct the machine's `ExecutionPolicy`:
 
 ```powershell
-$ curl -o- https://raw.githubusercontent.com/jejebecarte/dotfiles/refs/heads/master/windows/setup.sh | bash
+$ Set-ExecutionPolicy RemoteSigned
 ```
 
 # Limitations
