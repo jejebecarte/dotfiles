@@ -8,7 +8,7 @@
 	email = 69335633+jejebecarte@users.noreply.github.com
 	signingKey = 7C6976A545B52C37
 [credential]
-	helper = wincred
+	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-wincred.exe
 [commit]
 	gpgsign = true
 	template = ~/.gitmessage
@@ -16,9 +16,6 @@
 	sslVerify = true
 [gpg]
 	program = /mnt/c/Program Files (x86)/GnuPG/bin/gpg.exe
-# gpgprogram = /mnt/c/Program Files (x86)/GnuPG/bin/gpg.exe
-[includeIf "gitdir:C:/"]
-	path = .gitconfig-windows
 [core]
 	autocrlf = false
 	eol = lf
