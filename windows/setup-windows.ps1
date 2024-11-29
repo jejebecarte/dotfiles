@@ -3,6 +3,9 @@ if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
     exit;
 }
 
+# Run winutil (also manages O&O ShutUp config)
+Invoke-RestMethod "https://christitus.com/win" | Invoke-Expression
+
 # Install and configure apps for Powershell prompt customisation
 Install-Module -Name PSReadLine -Force -SkipPublisherCheck -AllowClobber
 Install-Module -Name Terminal-Icons
@@ -19,6 +22,7 @@ New-Item -Path "$env:USERPROFILE\.gnupg\gpg-agent.conf" -ItemType SymbolicLink -
 
 # VSCode
 New-Item -Path "$env:APPDATA\Code\User\settings.json" -ItemType SymbolicLink -Value "$PWD\vscode\settings.json" -Force
+Select-String '(?:itemName=)([^"]*)' -Path vscode/extensions.md | Foreach { code --install-extension $_.matches.Groups[1].Value}
 
 # PowerShell 5 & 7
 Copy-Item "$PWD\windows\Microsoft.PowerShell_profile.ps1" -Destination "$env:USERPROFILE\Documents\WindowsPowerShell" -Force
