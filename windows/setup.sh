@@ -1,13 +1,13 @@
 #!/bin/bash
 
 mkdir ~/git
-cd ~/git
+cd ~/git || exit
 git clone https://github.com/jejebecarte/dotfiles.git
-cd dotfiles
+cd dotfiles || exit
 
 # Create symlinks for dotfiles
 files=(".bash_profile" ".bash_prompt" ".bashrc" ".gitattributes" ".gitconfig" ".gitignore" ".gitmessage" ".npmrc")
-for file in ${files[@]}; do
+for file in "${files[@]}"; do
     ln -sf "$PWD/$file" "$HOME/$file"
 done
 
