@@ -7,15 +7,13 @@
 	name = jejebecarte
 	email = 69335633+jejebecarte@users.noreply.github.com
 	signingKey = 7C6976A545B52C37
-[credential]
-	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-wincred.exe
 [commit]
 	gpgsign = true
 	template = ~/.gitmessage
+[tag]
+	gpgSign = true
 [http]
 	sslVerify = true
-[gpg]
-	program = /mnt/c/Program Files (x86)/GnuPG/bin/gpg.exe
 [core]
 	autocrlf = false
 	eol = lf

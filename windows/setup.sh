@@ -11,6 +11,8 @@ for file in "${files[@]}"; do
     ln -sf "$PWD/$file" "$HOME/$file"
 done
 
+ln -sf "$PWD/gpg-agent.conf" "$HOME/.gnupg/gpg-agent.conf"
+
 # Install and configure nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
 nvm install --lts

@@ -10,3 +10,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# shellcheck disable=SC2155
+export GPG_TTY=$(tty)

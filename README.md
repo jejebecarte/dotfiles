@@ -17,7 +17,14 @@ $ Set-ExecutionPolicy Unrestricted
 $ curl -o- https://raw.githubusercontent.com/jejebecarte/dotfiles/refs/heads/master/windows/setup.sh | bash
 ```
 
-3.  Back in Powershell, correct the machine's `ExecutionPolicy`:
+3.  Import your GPG key pair:
+
+```bash
+$ gpg --import public.pgp
+$ gpg --import private.pgp
+```
+
+4.  Back in Powershell, correct the machine's `ExecutionPolicy`:
 
 ```powershell
 $ Set-ExecutionPolicy RemoteSigned

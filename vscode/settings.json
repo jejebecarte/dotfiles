@@ -61,5 +61,6 @@
     "files.eol": "\n",
     "telemetry.telemetryLevel": "off",
     "diffEditor.ignoreTrimWhitespace": false,
-    "git.enableCommitSigning": true
+    "git.enableCommitSigning": true,
+    "terminal.integrated.hideOnStartup": "whenEmpty"
 }
